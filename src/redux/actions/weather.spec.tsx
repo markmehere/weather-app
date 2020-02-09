@@ -1,18 +1,10 @@
 import React from 'react';
-import { TemperatureScale } from '../../types/TemperatureScale';
 import { WeatherKind } from '../../types/WeatherKind';
 import { MetaWeatherResponse } from '../../types/MetaWeatherResponse';
 import { getForecast, GET_FORECAST, GET_FORECAST_SUCCESS } from './weather';
 import 'jest-fetch-mock';
 
 describe('weather action creators', () => {
-
-  const defaultProps = {
-    scale: TemperatureScale.Celsius,
-    city: { value: 1105779, label: 'Sydney, AU' },
-    setUnits: jest.fn(),
-    setCity: jest.fn()
-  }
 
   it('should execute getForecast as expected', (next) => {
     const fakeApiResponse: MetaWeatherResponse = { 
