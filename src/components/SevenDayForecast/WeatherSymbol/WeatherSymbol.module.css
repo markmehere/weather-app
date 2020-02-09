@@ -1,0 +1,13 @@
+.weatherSymbol {
+  width: 8vw;
+}
+
+.weatherSymbol img {
+  width: 70%;
+}
+
+.weatherDescription {
+  font-size: 40%;
+  color: #888;
+  margin: 0;
+}
