@@ -25,7 +25,6 @@ describe('<WeatherTemperature />', () => {
 
   it('should render celsius to integer value only', () => {
     const result = shallow(<WeatherTemperature {...defaultProps}  />);
-    console.log(result.text());
     expect(result.text()).toContain('20\u00B0C / -2\u00B0C');
   });
 
